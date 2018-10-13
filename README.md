@@ -1,7 +1,7 @@
 # Eve-KKIK-docker
-Enabling docker in the community updated version of Eve
+Enabling docker in the community updated version of Eve.
 
-Add docker to community version of eve community version 2.0.3-86. uninstall docker-enginer, docker.io. Install Docker-CE as per https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository.
+Add docker to community version of eve community version based upon 2.0.3-90 and known as version 1.71. uninstall docker-enginer, docker.io if installed. Install Docker-ce as per https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository.
 
 Create /etc/systemd/system/docker.service.d/override.conf with the contents below: [Service] ExecStart= ExecStart=/usr/bin/dockerd -H unix://var/run/docker.sock -H tcp://127.0.0.1:4243
 
